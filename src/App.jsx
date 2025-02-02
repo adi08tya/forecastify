@@ -45,7 +45,7 @@ function App() {
 
       // Fetch 5-day forecast data
       const forecastResponse = await fetch(
-        `http://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${Api_key}`
+        `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${Api_key}`
       );
       const forecastData = await forecastResponse.json();
       console.log(forecastData);
